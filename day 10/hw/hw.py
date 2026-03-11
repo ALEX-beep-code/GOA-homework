@@ -38,7 +38,7 @@ Age=int(input("enter your age"))
 is_student=str(input("are you a student? (yes or no?)"))
 if Age < 12 or Age >= 65:
     print("ბილეთი უფასოა")
-if is_student == "yes" and Age > 12:
+if is_student == "yes" or Age > 12:
     print( "ბილეთი ნახევარ ფასად")
 else:
     print("სრული ფასი უნდა გადაიხადო")
