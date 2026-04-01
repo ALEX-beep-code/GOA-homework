@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>labels</title>
+</head>
+
+<body>
+    <!--Label - ითარგმენება როგორც ეტიკეტი გამოიყენება მომხმარებლისთვის form-ის ხელმისაწვდომის გასაადვილებლად (მაგ: თეგით დაწერილ ტექსტზე თუ დავაჭერთ დაკავშირებულ ინპუთში დაიწყებს წერას)-->
+    <!--label tag-ის დასაკავშირებლად გვჭირდება input=ის id. id label-ის ექსკლუზიურ ატრიბუტში (for - ში) უნდა ჩავსვათ და ეგრე დაკავშირდება აი მაგალითი:-->
+    <label for="user_email">type your email</label>
+    <input type="email" id="user_email" placeholder="type your email here">
+
+    <!--input types-->
+    <input type="text"> <!--აქ შეგვიძლია მომხმარებლეს მისი სახელი მოვთხოვოთ-->
+    <input type="password"> <!--აქ შეგვიძლია მომხმარებელს მისი პაროლი მოვთხოვოთ-->
+    <input type="email"> <!--აქ შეგვიძლია მომხმარებელს მისი ემაილი მოვთხობოთ-->
+    <input type="date"> <!--აქ შეგვიძლია რიცხვი თვე და წელი მოვთხოვოთ მომხმარებელს-->
+    <input type="month"> <!--აქ შეგვიძლია თვე და წელი მოვთხოვოთ მომხმარებელს-->
+    <input type="submit"> <!--აქ მომხმარებელს შეუძლია შეყვანილი ინფორმაცია დაადასტუროს და გაუშვას-->
+    <button type="submit">submit</button> <!--იგივე როგორც სუბმით ინპუტი ოღონდ ღილაკად-->
+<br> <br> <br> <br>
+    <!--custom submit - ის button submit - ის და input submit - ის შორის განსხვავება არის ის რომ custom-ის უფრო გემოვნებით შეიძლება გაკეთება. button submit-ი უბრალოდ submit ღილაკითაში->
+    <!-label-ის ყოველ თეგზე ქონა კარგი პრაქტიკაა რადგან მომხმარებლისთვის საიტს უფრო ხელმისაწვდომს ხდის და უფრო სასიამოვნოს ხდის გამოსაყენებლად -->
+    <h2>Log in</h2>
+    <form>
+        <label for="paswordd">enter your password</label>
+        <input type="password" placeholder="enter your password" id="paswordd">
+        <br>
+        <label for="emaill">enter your email</label>
+        <input type="email" placeholder="enter your email" id="emaill">
+    </form>
+
+
+<br><br><br><br><br><br>
+
+
+<h2>registration</h2>
+    <label for="user">type your username</label>
+    <br>
+    <input type="text" placeholder="enter your name" id="user">
+    <br>
+    <label for="paswordi">type your password</label>
+    <br>
+    <input type="password" placeholder="enter your email" id="paswordi">
+    <br>
+    <label for="emaili">type your email</label>
+    <br>
+    <input type="email" placeholder="enter your email" id="emaili">
+    <br>
+    <label for="date">type your date of birth</label>
+    <br>
+    <input type="date" placeholder="enter your date of birth" id="date">
+    <br>
+    <input type="submit">
+</body>
+
+</html>
