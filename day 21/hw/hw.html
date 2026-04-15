@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>homework</title>
+</head>
+
+<body>
+    <!--1) მოიყვანეთ 3 რეალური მაგალითი სად შეიძლება გამოვიყენოთ radio input-->
+
+    <!--შეფასების არჩევისთვის , გენდერის არჩევისთვის , და გადახდის მეთოდის არჩევისთვის -->
+
+    <!--2) მოიყვანეთ 3 რეალური მაგალითი სად შეიძლება გამოვიყენოთ select-->
+
+    <!-- უნივერსიტეტის არჩევა სამუშაო პოზიციის არჩევა კურსის არჩევა -->
+
+    <!--3) შექმენით ფორმა, სადაც მომხმარებელი აირჩევს სქესს (radio input გამოყენებით):
+        - Male
+        - Female -->
+
+    <!--ორივეთი გავაკეთე-->
+
+    <h1>Whats your gender</h1>
+    <form>
+        <input type="radio" name="Gender" value="Male"> Male
+        <input type="radio" name="Gender" value="Female"> Female
+    </form>
+
+    <select name="Gender" id="user_gender">Gender
+
+        <option disabled selected>Gender</option>
+
+        <option value="user_gender1">Male</option>
+
+        <option value="user_gender2">Female</option>
+
+    </select>
+
+    <!-- 4) შექმენით ფორმა, სადაც მომხმარებელი აირჩევს ქვეყანას select გამოყენებით (მინიმუმ 5 ქვეყანა, გამოიყენით და ახსენით selected ატრიბუტი). -->
+    <form>
+        <select name="countries">
+            <option disabled selected>countries</option>
+            <option value="Spain">Spain</option>
+            <option value="france">france</option>
+            <option value="georgia">georgia</option>
+            <option value="germany">germany</option>
+            <option value="brazil">brazil</option>
+        </select>
+    </form>
+    <!--selected ატრიბუტი გამოიყენება იმისთვის რომ მომხმარებლამდე ავირჩიოთ რაიმე ვარიანტი სანამ ის მას არ შეცვლის. ის სიტყვა რომელიც იქნება selected ატრიბუტით იქნება არჩეული და გამოსახული selection - ში-->
+
+    <!--5) შექმენით ფორმა, სადაც იქნება:
+        - სახელი (text input)
+        - საყვარელი ფერი (radio input)
+        - ქალაქი (select)
+        - submit ღილაკი !-->
+    <form>
+        <input type="text" placeholder="enter your name">
+        <p>Whats your favourite colour?</p>
+        <input type="radio">green
+        <input type="radio">black
+        <input type="radio">white
+        <input type="radio">red
+        <input type="radio">yellow
+        <select>
+            <option>tbilisi</option>
+            <option>moscow</option>
+            <option>paris</option>
+            <option>berlin</option>
+            <option>new york</option>
+        </select>
+        <input type="submit">
+    </form>
+    <!--6) შექმენით survey (გამოკითხვა):
+    - "რომელი პროგრამირების ენა მოგწონთ?"
+    - გამოიყენეთ radio input-->
+    <h2>Mini survey</h2>
+    <form>
+        <p>which one do you like more</p>
+        <input type="radio">Python
+        <input type="radio">Html
+    </form>
+
+</body>
+
+</html>

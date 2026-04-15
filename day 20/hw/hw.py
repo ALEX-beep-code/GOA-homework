@@ -16,6 +16,7 @@ print(numbers[3])
 cities = ["tbilisi" , "paris" , "moscow" , "newyork" , "rome"]
 cities [2] = "washington DC"
 print (cities[2])
+
 # 5) შექმენი სია, სადაც შეინახავ შენი ოჯახის წევრების სახელებს. -> დაბეჭდე პირველი და ბოლო ელემენტი (ინდექსებით)
 
 family_names = ["alex" , "tata" , "daro" , "natia" , "soso" , "tamro" , "shalva"]
@@ -30,7 +31,7 @@ numbers_list [4] = 100
 # 7) შექმენი სია, სადაც შეინახავ 10 ძაღლის სახელს. -> შეცვალე მეხუთე ელემენტი სხვა თამაშით
 
 dog_names = ["marshall" , "luka" , "cupcake" , "robert" , "luna" , "bella" , "lucy" , "max" , "cooper" , "milo"]
-dog_names [5] = "Lex"
+dog_names [4] = "Lex"
 
 # 8) შექმენი სია, სადაც შეინახავ 3 სტრინგს, 3 რიცხვს და 3 ბულეანს. -> დაბეჭდე ნებისმიერი ერთი ელემენტი ინდექსის გამოყენებით
 
@@ -40,14 +41,15 @@ print (types [2])
 # 9) შექმენი სია, სადაც შეინახავ 5 მუსიკოსის სახელს. -> თუ პირველი ელემენტი არის 'Drake' -> შეცვალე სხვა მუსიკოსით
 
 musicians = ["Drake" , "Taylor Swift" , "The Weeknd" , "MJ" , "scott ian"]
-musicians [0] = "joe belladona"
+if musicians [0] == "Drake":
+    musicians [0] = "Joe belladona"
 print (musicians)
 
 # 10) შექქმენი სია, სადაც შეინახავ რიცხვებს(როგორც მთელები ისე არამთელები) -> გაზარდე სიის პირველი და ბოლო ელემენტი 1000-ით
 
 numbers2 = [12 , 13 , 15 , 28.4 , 34,5 , 21]
 numbers2 [0] = numbers2 [0] + 1000
-numbers2 [5] = numbers2 [5] + (1000)
+numbers2 [5] = numbers2 [5] + 1000
 print (numbers2)
 
 # 11) შექმენი სია, სადაც შეინახავ 3 რიცხვს(როგორც მთელები ისე არამთელები)
@@ -56,7 +58,7 @@ print (numbers2)
 #   - სხვა შემთხვევაში:
 #       გაზარდე სიის პირველი ელემენტი მეორე და მესამე ელემენტის ნამრავლით
 
-numbers = [12, 3, 4]
+numbers = [12, 3.1, 4]
 if numbers[0] > 10:
     numbers[2] = numbers[2] + (numbers[0] * numbers[1])
 else:
