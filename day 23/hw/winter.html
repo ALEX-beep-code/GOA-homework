@@ -83,17 +83,18 @@
 
         <h2>whats your gender?</h2>
 
-        <input name="gender" value="Male" type="radio">male
+        <label for="male">Male</label>
+        <input name="gender" value="Male" type="radio" id="male">
 
         <input name="gender" value="Female" type="radio">Female
 
         <p>select the country you are form</p>
 
-        <select>
+        <select name="country">
             <option selected disabled>countries</option>
-            <option>georgia</option>
-            <option>turkey</option>
-            <option>russia</option>
+            <option value="georgia">georgia</option>
+            <option value="turkey">turkey</option>
+            <option value="russia">russia</option>
         </select>
     </form>
     <h2 id="comments">leave a comment</h2>
