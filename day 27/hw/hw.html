@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>style</title>
+</head>
+<body>
+    <!--1) რისთვის გვჭირდება style ატრიბუტი?-->
+    <!--style - ატრიბუტი გამოიყენება კოდისთვის დიზაინის მინიჭებისთვის-->
+
+    <!--2) ჩამოთვალეთ და განმარტეთ ნასწავლი property-ები-->
+    <!--text align - არჩეული ტექსტის პოზიციის ასარჩევად გამოიყენება colour - მითითებული თეგის ფერის შესაცვლელად გამოიყენება font-family ტექსტის ტიპის შეცავლელად გამოიყენება font-size - ტექსტის სიდიდის შესაცვლელად გამოიყენება border - გამოიყენება ჩარჩოში ჩასასმელად  margin - ელემენტის გარეთა დაშორებაა (სხვა ელემენტებთან) padding - ელემენტის შიდა დაშორებაა (ტექსტსა და ჩარჩოს შორის)-->
+
+    <!--3) ახსენით რა არის განსხვავება inline და block ელემენტებს შორის-->
+    <!--Block ელემენტი ავტომატურად გადადის ახალ ხაზზე და მთელ სიგანეს იკავებს, ხოლო inline ელემენტი არ წყვეტს ხაზს და მხოლოდ საჭირო სივრცეს იკავებს.-->
+
+    <!--4) შექმენით პარაგრამი, რომელსაც ექნება წითელი ფერი, ტექსტის ზომა 32px.-->
+
+    <p style="color: red; font-size: 32px;">GOA</p>
+
+    <!--5) შექმენით h1 ტექსტი იყოს ლურჯი, ზომაში 50px, იყოს ცენტრში-->
+
+    <h1 style="color: blue; font-size: 50px;">Hex</h1>
+
+    <!--6) შექმენით p ტექსტი იყოს ნაცრისფერი, ბორდერი ყვითელი, განლაგება მარჯვნივ-->
+
+    <p style="color: gray; border: yellow; text-align: right;">CSS is cool</p>
+
+    <!--7) ახსენით როდის გამოიყენება div ტეგი?-->
+    <!--<div> გამოიყენება ელემენტების დასაჯგუფებლად, რომ ერთად გავსტილოთ ან განვალაგოთ.-->
+    
+    <!--8) შექმენი დივი რომელიც გასტილე საკუთარი გემოვნებით(ფერი, ბორდერი, ფონტის ზომა). 
+   - მის შიგნით შექმენი 6 პარაგრაფი. ამ 6 პარაგრაფიდან ყოველი მეორეს ტექსტი განალაგე მარჯვნივ-->
+
+   <div style="font-family: sans-serif; color: aquamarine; font-size: 50px; border: solid blue;">
+    <p>abc</p>
+    <p style="text-align: right;">def</p>
+    <p>ghi</p>
+    <p style="text-align: right;">jkl</p>
+    <p>mno</p>
+    <p style="text-align: right;">pqr</p>
+   </div>
+
+    <!--9) შექმენი დაულაგებელი სია(მიეცი ბორდერი), რომელსაც ექნება 7 ელემენტი:
+    - თითოეულ ელემენტს ქონდეს განსხვავებული ფერი
+    - გასტილე ელემენტები ისე, რომ ყველაზე ზედა ელემენტს ქონდეს ყველაზე  დიდი ფონტის ზომა, ხოლო ყველა შემდეგს 2px-ით ნაკლები წინაზე-->
+
+    <ul style="border: solid 32px;">
+        <li style="color: blue; font-size: 32px;"> <p>A</p></li>
+        <li style="color: yellow; font-size: 30px;"> <p>B</p></li>
+        <li style="color: aquamarine; font-size: 28px;"> <p>C</p></li>
+        <li style="color: aqua; font-size: 26px;"> <p>D</p></li>
+        <li style="color: green; font-size: 24px;"> <p>E</p></li>
+        <li style="color: red; font-size: 22px;"> <p>F</p></li>
+        <li style="color: bisque; font-size: 20px;"> <p>G</p></li>
+    </ul>
+
+    <!--10) შექმენი დალაგებული სია(მიეცი ბორდერი), რომელსაც ექნება 7 ელემენტი:
+    - თითოეულ ელემენტს ქონდეს განსხვავებული ფერი
+    - გასტილე ელემენტები ისე, რომ ყველაზე ზედა ელემენტს ქონდეს ყველაზე პატარა ფონტის ზომა, ხოლო ყველა შემდეგს 2px-ით მეტი წინაზე-->
+
+    <ol style="border: solid 32px;">
+        <li style="color: orange; font-size: 20px;"> <p>A</p></li>
+        <li style="color: yellow; font-size: 22px;"> <p>B</p></li>
+        <li style="color: gold; font-size: 24px;"> <p>C</p></li>
+        <li style="color: goldenrod; font-size: 26px;"> <p>D</p></li>
+        <li style="color: darkgoldenrod; font-size: 28px;"> <p>E</p></li>
+        <li style="color: darkcyan; font-size: 30px;"> <p>F</p></li>
+        <li style="color: darkblue; font-size: 32px;"> <p>G</p></li>
+    </ol>
+    
+
+</body>
+</html>

@@ -17,7 +17,7 @@
 
 #task 2
 
-array = []
+array = [0 , 0 , 0 , 0 , 0 , 0]
 counter = 0
 for i in range (6):
     list = input("დაწერე რიცხვი")
