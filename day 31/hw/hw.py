@@ -52,3 +52,81 @@ print(Text.startswith("Hello"))
 # 11) მომხმარებელს შემოატანინეთ პაროლი. შეამოწმეთ:
 # - იწყება თუ არა დიდი ასოთი
 # - მთავრდება თუ არა ციფრით "1"
+
+password = str(input("Enter the password"))
+
+if password[0] == password[0].upper():
+    starts_with_upper = True
+else:
+    starts_with_upper = False
+
+if password[0] == password.endswith("1"):
+    starts_with_1 = True
+
+# 12) მომხმარებელს შემოატანინეთ წინადადება. პროგრამამ უნდა:
+# - მოაშოროს ზედმეტი სფეისები
+# - ყველა სფეისი შეცვალოს "_" სიმბოლოთი
+# - შეამოწმოს მთავრდება თუ არა "." სიმბოლოზე
+# - თუ არ მთავრდება, ბოლოში დაამატოს "."
+
+sentence = str(input("Enter a sentence"))
+sentence = sentence.strip()
+sentence = sentence.replace(" " , "-")
+if sentence.endswith(".") == False:
+    sentence = sentence + "."
+
+# 13) მომხმარებელს შემოატანინეთ სრული სახელი (სახელი, გვარი, მამის სახელი). `split()` მეთოდის გამოყენებით:
+# - ცალ-ცალკე გამოიტანეთ თითოეული ნაწილი
+# - დაითვალეთ რამდენი სიტყვაა შეყვანილ ტექსტში
+
+user_info = str(input("Enter your name , surname and fathers name"))
+user_info = user_info.split()
+name = user_info[0]
+surname = user_info[1]
+fathers_name = user_info[2]
+count = len(user_info)
+
+#თუ თავდაპირველი ტექსტი იგულისხმეთ მაშინ count = len(sentence) იქნება 82 ხაზის შემდეგ 
+
+# 14) მომხმარებელს შემოატანინეთ წინადადება. პროგრამამ უნდა:
+# - დაყოს ტექსტი სიტყვებად
+# - გამოიტანოს ყველაზე გრძელი სიტყვა
+# - გამოიტანოს ყველაზე მოკლე სიტყვა
+
+sentence = input("Enter a sentence: ")
+
+words = sentence.split()
+
+longest = words[0]
+shortest = words[0]
+
+for i in range(len(words)):
+    if len(words[i]) > len(longest):
+        longest = words[i]
+    elif len(words[i]) < len(shortest):
+        shortest = words[i]
+
+print("Longest word:", longest)
+print("Shortest word:", shortest)
+
+
+# 15) მომხმარებელს შემოატანინეთ რამდენიმე რიცხვი ერთი სტრინგის სახით (მაგ: "10 25 7 90 13"). split მეთოდის გამოყენებით:
+# - გადააქციეთ ისინი integer-ებად
+# - იპოვეთ ჯამი
+# - იპოვეთ ყველაზე დიდი და ყველაზე პატარა რიცხვი
+
+numbers = str(input("Enter some numbers"))
+numbers = numbers.split()
+for i in range(len(numbers)):
+    numbers[i] = int(numbers[i])
+Sum = 0
+for i in range(len(numbers)):
+    Sum += numbers[i]
+print("Sum equals to - " + str(Sum))
+smallest_number = numbers[0]
+biggest_number = numbers[0]
+for i in range(len(numbers)):
+    if numbers[i] > biggest_number:
+        biggest_number = numbers[i]
+    elif numbers[i] < smallest_number:
+        smallest_number = numbers[i]

@@ -110,17 +110,18 @@ for i in range(len(sentence)):
         if sentence[i] == lower_letters[i2]:
             lower += 1
 
-            for i3 in range(len(vowel_letters)):
-                if sentence[i] == vowel_letters[i3]:
+    for i2 in range(len(vowel_letters)):
+                if sentence[i] == vowel_letters[i2]:
                     vowels += 1
 
-            is_vowel = 0
-            for i3 in range(len(vowel_letters)):
-                if sentence[i] == vowel_letters[i3]:
+    is_vowel = 0
+
+    for i2 in range(len(vowel_letters)):
+                if sentence[i] == vowel_letters[i2]:
                     is_vowel = 1
 
-            if is_vowel == 0:
-                consonants += 1
+                if is_vowel == 0:
+                    consonants += 1
 
     if sentence[i] == " ":
         spaces += 1
