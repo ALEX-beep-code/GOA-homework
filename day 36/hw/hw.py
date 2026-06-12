@@ -17,6 +17,7 @@ def greet():
 
 greetin = greet()
 print(greetin)
+
 # 3) შექმენით ფუნქცია `square(number)`, რომელიც აბრუნებს რიცხვის კვადრატს. შეამოწმეთ რამდენიმე მნიშვნელობაზე.
 
 def square(number):
@@ -27,17 +28,14 @@ print(square(2))
 
 # 4) შექმენით ფუნქცია `add(a, b)`, რომელიც აბრუნებს ორი რიცხვის ჯამს. მომხმარებელს შემოატანინეთ ორი რიცხვი და გამოიყენეთ ფუნქცია.
 
-
 def add(a , b):
-    Sum = a + b
-    print(Sum)
-    return Sum
+    total = a + b
+    return total
 
 num_1 = int(input("Enter a number"))
 num_2 = int(input("Enter a number"))
 
 add(num_1 , num_2)
-
 
 # 5) შექმენით ფუნქცია `is_even(number)`, რომელიც აბრუნებს `True`-ს თუ რიცხვი ლუწია და `False`-ს თუ კენტია.
 
@@ -112,3 +110,15 @@ def format_name(name):
 Name = input("Enter your name: ")
 Name = format_name(Name)
 print(Name)
+
+
+# 14) შექმენით ფუნქცია `second_largest(numbers)`, რომელიც მიიღებს რიცხვების სიას და დააბრუნებს მეორე ყველაზე დიდ რიცხვს.
+# მაგალითი:
+# [4, 7, 2, 9, 5] → 7
+
+def second_largest(numbers):
+    numbers.sort()
+
+    return numbers[-2]
+
+print(second_largest([1, 6, 3, 12, 5]))
