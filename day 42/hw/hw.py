@@ -1,25 +1,23 @@
-#powers of 2
+# 1) ახსენით რა არის `tuple` და რით განსხვავდება ის `list`-ისგან.
 
-#https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/python
+# tuple - მნიშვნელობების კოლექცია და ასევე მიმდევრობა. მის და ლისტის შორის განსხვავება არის თაფლის შეცვლა არ შეიძლება ხოლო ლისტის კი
 
-def powers_of_two(n):
-    new = []
-    for i in range(n + 1):
-        if n < 0:
-            break
-        new.append(2**i)
-    return new
+# 2) მოიფიქრეთ, რომელ რეალურ სიტუაციებში გამოიყენებდით `tuple`-ს `list`-ის ნაცვლად.
 
-# Reversed Words
+#დაბადების თარიღი
 
-#https://www.codewars.com/kata/51c8991dee245d7ddf00000e
+birth_date = 10 , 10 , 2011
 
-def reverse_words(s):
-    s = s.split()
-    new = []
-    for i in range(len(s)):
-        new.append(s[i * -1])
+# 3) შექმენით ფუნქცია first_and_last(items), რომელიც მიიღებს `tuple`-ს და დააბრუნებს ახალ `tuple`-ს, რომელიც შეიცავს მხოლოდ პირველ და ბოლო ელემენტს.
 
-    return new
+def first_and_last(items):
+        first_last = items[0] , items[-1] 
 
-print(reverse_words("hello lol"))
+# 4) შექმენით ფუნქცია middle_element(items), რომელიც მიიღებს კენტსიგრძიან tuple-ს და დააბრუნებს მის შუა ელემენტს.
+# 5) შექმენით ფუნქცია count_occurrences(items, value), რომელიც მიიღებს tuple-ს და ნებისმიერ მნიშვნელობას, შემდეგ კი დააბრუნებს რამდენჯერ გვხვდება ეს მნიშვნელობა tuple-ში. არ გამოიყენოთ count() მეთოდი.
+# 6) შექმენით ფუნქცია contains_duplicates(items), რომელიც მიიღებს tuple-ს და დააბრუნებს True, თუ მასში რომელიმე ელემენტი მეორდება, წინააღმდეგ შემთხვევაში კი False.
+# 7) შექმენით ფუნქცია swap_edges(items), რომელიც მიიღებს მინიმუმ ორი ელემენტისგან შემდგარ tuple-ს და დააბრუნებს ახალ tuple-ს, სადაც პირველი და ბოლო ელემენტები ადგილებს გაცვლიან.
+# 8) მოიძიეთ ინფორმაცია index() მეთოდზე და შექმენით ფუნქცია first_position(items, value), რომელიც დააბრუნებს გადაცემული მნიშვნელობის პირველ ინდექსს.
+# 9) შექმენით ფუნქცია tuple_summary(numbers), რომელიც მიიღებს რიცხვების tuple-ს და დააბრუნებს შემდეგი ფორმატის ტექსტს:
+# "რაოდენობა: X | ჯამი: Y | პირველი: A | ბოლო: B"
+# 10) შექმენით ფუნქცია reverse_tuple(items), რომელიც მიიღებს tuple-ს და დააბრუნებს მის შებრუნებულ ვერსიას. გამოიყენეთ slicing
