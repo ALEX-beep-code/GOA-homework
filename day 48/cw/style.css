@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dynalight&display=swap');
+
+.ant {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+}
+
+.dyn {
+  font-family: "Dynalight", cursive;
+  font-weight: 400;
+}
