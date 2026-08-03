@@ -1,0 +1,285 @@
+<html>
+  <head>
+    <title>Hw</title>
+    <style>
+      #ults11 li:nth-child(even) {
+        color: red;
+        border: solid 1px blue;
+        background-color: blueviolet;
+      }
+      #ults11 li:nth-child(odd) {
+        color: rgb(34, 0, 255);
+        border: 1px red solid;
+        background-color: brown;
+      }
+      #ultask5 li:last-child {
+        font-size: 60px;
+        color: red;
+        border: solid 3px green;
+      }
+      #ultask5 li:first-child {
+        font-size: 30px;
+        color: rgb(255, 0, 89);
+        border: solid 5px rgb(128, 0, 34);
+      }
+      #fruits {
+        list-style: georgian;
+      }
+      #cities {
+        list-style: lower-greek;
+      }
+      #animals {
+        list-style: lower-latin;
+      }
+      #ul1 {
+        list-style: square;
+      }
+      #ul2 {
+        list-style: circle;
+      }
+      #ul3 {
+        list-style: none;
+      }
+      #ul4 {
+        list-style: decimal;
+      }
+      #ul5 {
+        list-style: upper-roman;
+      }
+      #products li:nth-child(even) {
+        color: red;
+      }
+      #products li:nth-child(odd) {
+        color: blue;
+      }
+      #products li:first-child {
+        color: blueviolet;
+        border: 2px green solid;
+      }
+      #products li:last-child {
+        color: aqua;
+        border: 4px purple solid;
+      }
+      #class-staff li:nth-child(odd) {
+        color: aqua;
+        border: solid 3px green;
+      }
+      #class-staff li:nth-child(even) {
+        color: rgb(187, 255, 0);
+        border: solid 3px rgb(128, 0, 0);
+      }
+      #class-staff li:first-child {
+        color: rgb(255, 0, 230);
+        border: solid 3px rgb(73, 0, 128);
+      }
+      #class-staff li:last-child {
+        color: hsl(0, 100%, 50%);
+        border: solid 3px rgb(128, 0, 0);
+      }
+      #weekdays li {
+        color: black;
+        border: solid 3px red;
+      }
+      #weekdays li:first-child {
+        color:  blueviolet;
+        border: dashed 3px green;
+      }
+      #weekdays li:last-child {
+        color:  rgb(43, 226, 134);
+        border: dashed 3px rgb(128, 107, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1) ახსენით რას ნიშნავს :first-child, :last-child და :nth-child -->
+
+    <!-- :first-child – ირჩევს მშობელი ელემენტის პირველ შვილს. :last-child – ირჩევს
+    მშობელი ელემენტის ბოლო შვილს. :nth-child(n) – ირჩევს მშობელი ელემენტის n-ე
+    შვილს (n შეიძლება იყოს რიცხვი, odd (კენტი) ან even (ლუწი)). -->
+
+    <!-- 2) ახსენით რა განსხვავებაა :first-child და :last-child შორის -->
+
+    <!--:first-child -  იღებს მშობლის პირველ ელემენტს ხოლო :last-child იღებს ბოლო ელემენტს-->
+
+    <!-- 3) ახსენით რას ნიშნავს :nth-child(even) და :nth-child(odd) -->
+
+    <!--even იყებს ლუწ შვილებს ხოლო odd იყებს კენტ რიცხვებს-->
+
+    <!-- 4) ახსენით, რომელ ელემენტებს მონიშნავს: - li:nth-child(even) -
+    li:nth-child(odd) - li:first-child - li:last-child -->
+
+    <!--even ლუწებს odd კენტებს first პირველს last ბოლოს -->
+
+    <!-- 5) შექმენით სია, რომელშიც იქნება მინიმუმ 10 ელემენტი. გამოიყენეთ: -
+    :nth-child(even) - :nth-child(odd) -->
+
+    <ul id="ults11">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+      <li>item6</li>
+      <li>item7</li>
+      <li>item8</li>
+      <li>item9</li>
+      <li>item10</li>
+      <li>item11</li>
+      <li>item12</li>
+      <li>item13</li>
+      <li>item14</li>
+    </ul>
+
+    <!-- 6) შექმენით მინიმუმ 8 ელემენტისგან შემდგარი სია. გამოიყენეთ: - :first-child
+    - :last-child -->
+    <!-- პირველ და ბოლო ელემენტს უნდა ჰქონდეს ერთმანეთისგან განსხვავებული: - ტექსტის
+    ფერი - ფონის ფერი - ჩარჩო - ზომა -->
+
+    <ul id="ultask5">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+      <li>item6</li>
+      <li>item7</li>
+      <li>item8</li>
+      <li>item9</li>
+      <li>item10</li>
+      <li>item11</li>
+      <li>item12</li>
+      <li>item13</li>
+      <li>item14</li>
+    </ul>
+
+    <!-- 7) შექმენით სამი სხვადასხვა სია: - ხილის სია - ცხოველების სია - ქალაქების
+    სია თითოეულ სიაში უნდა იყოს მინიმუმ 6 ელემენტი. გამოიყენეთ list-style და
+    თითოეულ სიას შეურჩიეთ განსხვავებული მარკერი -->
+
+    <ul id="fruits">
+      <li>orange</li>
+      <li>apple</li>
+      <li>pear</li>
+      <li>peach</li>
+      <li>grape</li>
+      <li>mango</li>
+    </ul>
+
+    <ul id="cities">
+      <li>tbilisi</li>
+      <li>paris</li>
+      <li>barcelona</li>
+      <li>madrid</li>
+      <li>newyork</li>
+      <li>telavi</li>
+    </ul>
+
+    <ul id="animals">
+      <li>dog</li>
+      <li>cat</li>
+      <li>lion</li>
+      <li>leopard</li>
+      <li>elephant</li>
+      <li>eagle</li>
+    </ul>
+
+    <!-- 8) შექმენით შემდეგი სტილის სიები: - list-style-type: square -
+    list-style-type: circle - list-style-type: decimal - list-style-type:
+    upper-roman - list-style-type: none თითოეულ სიაში განათავსეთ მინიმუმ 5
+    ელემენტი -->
+
+    <ul id="ul1">
+      <li>item</li>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+
+    <ul id="ul2">
+      <li>item</li>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+
+    <ul id="ul3">
+      <li>item</li>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+
+    <ul id="ul4">
+      <li>item</li>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+
+    <ul id="ul5">
+      <li>item</li>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+
+    <!-- 9) შექმენით პროდუქტების სია, რომელშიც იქნება მინიმუმ 10 პროდუქტი.
+    გამოიყენეთ: - :nth-child(odd) — კენტი პროდუქტებისთვის - :nth-child(even) —
+    ლუწი პროდუქტებისთვის - :first-child — პირველი პროდუქტისთვის - :last-child —
+    ბოლო პროდუქტისთვის პირველი და ბოლო პროდუქტი განსაკუთრებულად უნდა იყოს
+    გაფორმებული -->
+
+    <ul id="products">
+      <li>car</li>
+      <li>apple</li>
+      <li>plane</li>
+      <li>container</li>
+      <li>dress</li>
+      <li>cap</li>
+      <li>wheel</li>
+      <li>paint</li>
+      <li>brush</li>
+      <li>shirt</li>
+      <li>pants</li>
+    </ul>
+
+    <!-- 10) შექმენით მოსწავლეების სია, რომელშიც იქნება მინიმუმ 12 მოსწავლე.
+    გააფორმეთ: - კენტი მოსწავლეები ერთი სტილით - ლუწი მოსწავლეები მეორე სტილით -
+    პირველი მოსწავლე მესამე სტილით - ბოლო მოსწავლე მეოთხე სტილით -->
+
+    <ul id="class-staff">
+      <li>alex</li>
+      <li>lasha</li>
+      <li>sandro</li>
+      <li>gabrieli</li>
+      <li>giorgi</li>
+      <li>beka</li>
+      <li>nika</li>
+      <li>gela</li>
+      <li>luka</li>
+      <li>merabi</li>
+      <li>ilia</li>
+      <li>tornike</li>
+      <li>jaba</li>
+    </ul>
+
+    <!-- 11) შექმენით კვირის დღეების სია. გამოიყენეთ: - სამუშაო დღეებისთვის ერთი
+    სტილი - შაბათისა და კვირისთვის განსხვავებული სტილი - პირველი დღისთვის
+    :first-child - ბოლო დღისთვის :last-child -->
+
+    <ul id="weekdays">
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+      <li>Friday</li>
+      <li>Saturday</li>
+      <li>Sunday</li>
+    </ul>
+  </body>
+</html>

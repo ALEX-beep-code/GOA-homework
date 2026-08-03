@@ -72,4 +72,36 @@ def word_value(word):
 
     return total
 
-print(word_value("love"))
+# 8) https://www.codewars.com/kata/5680781b6b7c2be860000036
+
+def vowel_indices(word):
+    vowels = "aeiouyAEIOUY"
+    result = []
+
+    for i in range(len(word)):
+        if word[i] in vowels:
+            result.append(i + 1)
+
+    return result
+
+# 9) https://www.codewars.com/kata/556196a6091a7e7f58000018
+
+def largest_pair_sum(numbers): 
+    largest = max(numbers)
+    numbers.remove(max(numbers))
+    largest2 = max(numbers)
+    return largest + largest2
+
+# 10) https://www.codewars.com/kata/580755730b5a77650500010c 
+
+def sort_my_string(s):
+    even = ""
+    odd = ""
+
+    for i in range(len(s)):
+        if i % 2 == 0:
+            even += s[i]
+        else:
+            odd += s[i]
+
+    return even + " " + odd

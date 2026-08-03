@@ -83,7 +83,7 @@ def all_unique(numbers):
 # 13) შექმენით ფუნქცია unique_digits(number), რომელიც მიიღებს მთელ რიცხვს და დააბრუნებს set-ს, რომელიც შეიცავს ამ რიცხვის ყველა უნიკალურ ციფრს.
 
 def unique_digits(number):
-    number = list(str(number))
+    number = list(set(str(abs(number))))
     for i in range(len(number)):
         number[i] = int(number[i])
     return set(number)
