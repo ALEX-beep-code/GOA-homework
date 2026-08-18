@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+
+    <style>
+        body {
+            background-color: #1a0f2b;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .checkout {
+            background-color: #2b1647;
+            padding: 25px;
+            margin: 0 auto;
+            max-width: 400px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            text-shadow:
+                0px 0px 10px white,
+                0px 0px 10px white,
+                0px 0px 10px white;
+        }
+
+        label {
+            font-size: 14px;
+            color: #d1b3ff;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            background: #1a0f2b;
+            border: 1px solid #5a328f;
+            color: white;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .card-details {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card-details div {
+            flex: 1;
+        }
+
+        button {
+            padding: 10px;
+            background: #9d4edd;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #7b2cbf;
+        }
+
+        .home {
+            color: #d1b3ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="checkout">
+
+        <h2>Checkout</h2>
+
+        <form action="THX.html">
+
+            <label>Cardholder Name</label><br>
+            <input type="text" placeholder="Name on Card" required><br>
+
+            <label>Card Number</label><br>
+            <input type="text" placeholder="1234 5678 9012 3456" required><br>
+
+            <div class="card-details">
+
+                <div>
+                    <label>Exp Date</label><br>
+                    <input type="text" placeholder="MM/YY" required>
+                </div>
+
+                <div>
+                    <label>CVV</label><br>
+                    <input type="password" placeholder="123" required>
+                </div>
+
+            </div>
+
+            <button type="submit">Pay Now</button>
+
+        </form>
+
+    </main>
+
+    <br>
+
+    <a href="home.html" class="home">Back to homepage</a>
+
+</body>
+</html>
