@@ -25,10 +25,21 @@ def count_products(products):
 # 6) შექმენით ფუნქცია get_price, რომელიც მიიღებს პროდუქტების dictionary-ს და პროდუქტის სახელს და დააბრუნებს შესაბამის ფასს.
 
 def get_price(product_name , products):
-    return product_name[products]
-
+    return products[product_name]
 
 # 7) შექმენით ფუნქცია create_student, რომელსაც ექნება name, lastname, age, weight, height, grades, passed_test პარამეტრები. თქვენმა ფუნქციამ უნდა შექმნას dict შესაბამისი key-value ებით.
+
+def create_student(name, lastname, age, weight, height, grades, passed_test):
+    student = {
+        "name": name,
+        "lastname": lastname,
+        "age": age,
+        "weight": weight,
+        "height": height,
+        "grades": grades,
+        "passed_test": passed_test
+    }
+    return student
 
 # 8) შექმენით ფუნქცია print_student, რომელიც მიიღებს მოსწავლის dictionary-ს, რომელსაც ექნება name, lastname, age, weight, height, grades, passed_test გასაღებები.
 #   - თქვენმა ფუნქციამ უნდა დაპრინტოს მოსწავლის შესახებ ინფორმაცია შემდეგი ფორმატით:
@@ -42,3 +53,22 @@ def get_price(product_name , products):
 # Grades: 9, 10, 8, 10, 9, 10, 10
 # Passed_test: True 
 # --- -- -- -- -- --- 
+
+def print_student(student):
+    print("-- Student Info --")
+    print("Name:", student["name"].title())
+    print("Lastname:", student["lastname"].title())
+    print("Age:", student["age"])
+    print("Weight:", student["weight"])
+    print("Height:", student["height"])
+    print("Grades:", ",".join(student["grades"]))
+    print("Passed_test:", student["passed_test"])
+    print("--- -- -- -- -- ---")
+
+first_student = create_student("gio" , "giorgadze" , 16 , 56.9, 185 , ["9" , "6" , "8" , "4"] , True )
+
+print_student(first_student)
+
+list = ["hi" , "hello"]
+new = ",".join(list)
+print(new)
