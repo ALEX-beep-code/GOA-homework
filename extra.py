@@ -263,11 +263,11 @@ print(common_elemts({1 , 2 , 3 , 4} , {2 , 4 , 5}))
 # შექმენი პატარა Student Management Program.
 # პროგრამაში გქონდეს:
 
-students = {
-    "Giorgi": 85,
-    "Nika": 45,
-    "Ana": 92
-}
+# students = {
+#     "Giorgi": 85,
+#     "Nika": 45,
+#     "Ana": 92
+# }
 
 # პროგრამამ:
 # 1.    while loop-ით მომხმარებელს ჰკითხოს მოსწავლის სახელი; 
@@ -279,16 +279,24 @@ students = {
 # ამ დავალებაში მოწმდება:
 # dictionary + while + if/else + break + ფუნქციონალური ლოგიკა.
 
-i = 0
-while 1 > 0:
-    user_request = str(input("enter your request"))
-    if user_request == "exit":
-        break
-    if user_request in students:
-        print(students.get(user_request))
-        if students.get(user_request) >= 50:
-            print("passed")
-        else: print("failed")
-    if user_request not in students:
-        print("student not found")
+# i = 0
+# while 1 > 0:
+#     user_request = str(input("enter your request"))
+#     if user_request == "exit":
+#         break
+#     if user_request in students:
+#         print(students.get(user_request))
+#         if students.get(user_request) >= 50:
+#             print("passed")
+#         else: print("failed")
+#     if user_request not in students:
+#         print("student not found")
+
+
+
+empty = []
+for i in range(1 , 102):
+    empty.append(i)
+
+print(empty)
 
