@@ -17,10 +17,13 @@
             background-image: url("images/pattern-background-desktop.svg");
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
         .card {
-            margin-top: 5%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -42,12 +45,6 @@
             font-weight: bold;
             font-size: 36px;
             margin-bottom: 20px;
-        }
-
-        .positioner {
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         .desc {
@@ -107,7 +104,6 @@
     </style>
 </head>
 <body>
-    <div class="positioner">
     <div class="card">
 
         <div class="hero">
@@ -134,7 +130,6 @@
             <p class="cancel">Cancel Order</p>
 
 
-    </div>
     </div>
 </body>
 </html>
