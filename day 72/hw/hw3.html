@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=a, initial-scale=1.0" />
+    <title>Keyframes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+      .anim {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        animation-name: axe;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes axe {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img class="anim" src="./assets/circl.jpg" alt="img">
+  </body>
+</html>

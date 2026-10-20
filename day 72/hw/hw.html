@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=a, initial-scale=1.0" />
+    <title>Keyframes</title>
+    <style>
+      .anim {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        animation-name: axe;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
+      @keyframes axe {
+        from { left: 0%;
+        }
+        to {
+          left: 85%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="anim"></div>
+    </div>
+  </body>
+</html>

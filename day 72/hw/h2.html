@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=a, initial-scale=1.0" />
+    <title>Keyframes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+      .anim {
+        position: relative;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 0, 0);
+        animation-name: axe;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes axe {
+        0% { transform: scale(1);
+        }
+        50% {
+            transform: scale(0.8);
+        }
+        100% {
+          transform: scale(1.2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="anim"></div>
+    </div>
+  </body>
+</html>

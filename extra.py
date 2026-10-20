@@ -248,7 +248,12 @@ print(common_elemts({1 , 2 , 3 , 4} , {2 , 4 , 5}))
 # passed_test
 
 # def create_student(name , lastname , age , weight , height , grades , passed_test):
-#     student = {
+
+empty = []
+for i in range(1 , 102):
+    empty.append(i)
+
+print(empty)#     student = {
 #         "name": name,
 #         "lastname" : lastname,
 #         "age" : age,
@@ -294,9 +299,7 @@ print(common_elemts({1 , 2 , 3 , 4} , {2 , 4 , 5}))
 
 
 
-empty = []
-for i in range(1 , 102):
-    empty.append(i)
 
-print(empty)
-
+my_dict = {
+    "key":"value"
+}
