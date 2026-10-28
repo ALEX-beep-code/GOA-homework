@@ -11,6 +11,7 @@
         box-sizing: border-box;
       }
       body {
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,7 +20,7 @@
       }
       .card {
         background-color: #24232c;
-        width: 375px;
+        width: 343px;
         height: 423px;
         padding: 16px;
         display: flex;
@@ -154,20 +155,16 @@
       .arrow {
         width: 16px;
         height: 16px;
-        position: absolute;
-        top: 425px;
-        left: 805px;
       }
       .halfcopbar {
         margin-top: 19px;
         margin-bottom: 19px;
-        margin-right: 24px;
         display: flex;
-        width: 375px;
         height: 64px;
         justify-content: space-between;
         align-items: center;
         background-color: #24232c;
+        width: 343px;
       }
       .copmige {
         width: 21px;
@@ -242,7 +239,6 @@
         .arrow {
           top: auto;
           left: auto;
-          position: static;
         }
       }
     </style>
@@ -303,12 +299,14 @@
         </div>
 
         <div class="Generator">
-          <button class="genbut">Generate</button>
-          <img
-            class="arrow"
-            src="./day 73/cw-hw/assets/images/icon-arrow-right.svg"
-            alt="icon-arrow-right"
-          />
+          <button class="genbut">
+            Generate
+            <img
+              class="arrow"
+              src="/day 73/cw-hw/assets/images/icon-arrow-right.svg"
+              alt="icon-arrow-right"
+            />
+          </button>
         </div>
       </div>
     </div>
