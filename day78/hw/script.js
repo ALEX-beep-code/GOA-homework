@@ -30,13 +30,21 @@ function calculateArea(length) {
 
 // 5)დაწერეთ ფუნქცია, რომელიც მიიღებს ორ არგუმენტს და დააბრუნებს მათ შორის უდიდესს.
 
-function(n1 , n2) {
+function biggest(n1 , n2) {
     if(n1 > n2){
         return n1
     }
-    if(n2 > n1){
-        return n2
-    }
+    return n2
 }
+
+console.log(biggest(3 , 2))
+
 // 6)დაწერეთ ფუქნცია, რომელიც პარამეტრად მიიღებს იმ რაოდენობას, რამდენჯერად უნდა გამოკონსოლდეს "Hello, World".
+
+//?
+
 // 7)დაწერეთ ფუქნცია, სახელად celsiusToFahrenheit, რომელიც პარამეტრად მიიღებს ცელსიუსს და გადაიყვანს ფარენჰეიტში. ფორმულა - (Celsius * 9/5) + 32
+
+function celsiusToFahrenheit(c){
+    return (c * 9/5) + 32
+}
