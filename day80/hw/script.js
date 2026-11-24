@@ -1,6 +1,6 @@
 // 1)დაწერეთ პროგრამა, რომელიც მომხმარებელს შეეკითხება თავის ასაკს და დაადგენს არის თუ არა 18 წლის ან უფრო მეტის. თუ არის, გამოპრინტეთ "Adult", თუარადა - "Minor". გამოიყენე ternary operator
 
-let age = prompt("Enter your age:");
+let age = Number(prompt("Enter your age:"));
 
 let result = age >= 18 ? "Adult" : "Minor";
 
@@ -32,4 +32,5 @@ console.log(result);
 
 // თუ ასაკი 18 ან მეტია, დააბრუნოს "You can get a driving license", სხვა შემთხვევაში "You are too young".
 
-let check = (age) => {age < 18 ? "You are too young" : "You can get a driving license"}
+let check = (age) => age < 18 ? "You are too young" : "You can get a driving license"
+

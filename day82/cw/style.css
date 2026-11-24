@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(#B068E9 , #6463E7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mother {
+    width: 375px;
+    height: 643px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    width: 327px;
+    height: 535px;
+    background-color: white;
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+.leadimg {
+    width: 237px;
+    height: 180px;
+    position: relative;
+    top: 70px;
+    margin-bottom: 60px;
+}
+
+.imgbackground {
+    width: 240px;
+    height: 145px;
+    position: relative;
+    bottom: 115px;
+    background-color: bla;
+}
+
+.FAQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.FAQTEXT {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1E1F36;
+    margin-top: 110px;
+}
+
+.firstquestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 236px;
+    min-height: 13px;
+    height: auto;
+}
+
+.secondquestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 236px;
+    min-height: 13px;
+    height: auto;
+}
+
+.p1 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #4B4C5F;
+}
+
+.imagecard {
+    width: 237px;
+    height: 180px;
+}
+
+.liner {
+    width: 279px;
+    height: 1px;
+    background-color: #000010;
+    margin: 17px;
+}
+
+.last {
+    margin-bottom: 48px;
+}
+
+
+@media (min-width: 768px) {
+
+    .mother {
+        width: 920px;
+        height: 510px;
+        flex-direction: row;
+    }
+
+    .main {
+        width: 920px;
+        height: 510px;
+        margin-bottom: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .imagecard {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 0;
+    }
+
+    .leadimg {
+        width: 400px;
+        position: relative;
+        left: 180px;
+        height: auto;
+        top: 50px;
+        margin-bottom: 0;
+    }
+
+    .imgbackground {
+        display: none;
+    }
+
+    .FAQ {
+        width: 50%;
+        align-items: flex-start;
+        margin-right: 80px;
+    }
+
+    .FAQTEXT {
+        margin-top: 0;
+    }
+
+    .liner {
+        width: 100%;
+    }
+}
