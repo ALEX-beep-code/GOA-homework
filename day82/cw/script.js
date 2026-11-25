@@ -15,7 +15,7 @@ let arrow1 = document.getElementById("arrow1")
 let p1 = firstquestion.querySelector(".p1")
 let counter1 = 0
 
-extrapar1.textContent = "You can invite up to 7 members!"
+extrapar1.innerHTML= "You can invite up to 7 members!"
 pstyler(extrapar1)
 extrapar1.style.marginTop = "12px"
 

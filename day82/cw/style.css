@@ -68,9 +68,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 236px;
-    min-height: 13px;
-    height: auto;
+    width: 278px;
 }
 
 .secondquestion {
@@ -78,9 +76,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 236px;
-    min-height: 13px;
-    height: auto;
+    width: 278px;
 }
 
 .p1 {
@@ -97,7 +93,7 @@ body {
 .liner {
     width: 279px;
     height: 1px;
-    background-color: #000010;
+    background-color: #E8E8EA;
     margin: 17px;
 }
 
@@ -154,6 +150,8 @@ body {
     }
 
     .liner {
-        width: 100%;
+        width: 279px;
+        height: 1px;
+        background-color: #E8E8EA
     }
 }
